@@ -1,0 +1,213 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal-box h2 {
+    color: #1b5e20;
+    margin-bottom: 5px;
+}
+
+.modal-price {
+    font-size: 18px;
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.modal-stock {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.modal-contact {
+    color: #2e7d32;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+}
+
+.modal-label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.modal-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.modal-qty button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #2e7d32;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-qty button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.modal-qty input {
+    width: 70px;
+    height: 36px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.modal-total {
+    font-size: 17px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.modal-actions button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.cancel-btn {
+    background: #888;
+}
+
+.confirm-btn {
+    background: #2e7d32;
+}
+
+.confirm-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.pay-option {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pay-option.active {
+    border-color: #2e7d32;
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+.demo-payment {
+    background: #f1f8f1;
+    border: 1px dashed #2e7d32;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.demo-qr {
+    width: 170px;
+    height: 170px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    border: 5px solid #111;
+    border-radius: 6px;
+    padding: 5px;
+    background: white;
+}
+
+.qr-cell {
+    background: white;
+}
+
+.qr-dark {
+    background: #111;
+}
+
+.demo-hint {
+    font-size: 13px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.simulate-btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.paid-note {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}

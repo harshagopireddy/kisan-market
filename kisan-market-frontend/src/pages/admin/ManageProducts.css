@@ -1,0 +1,49 @@
+.products-container{
+
+    padding:30px;
+
+}
+
+
+.products-container h2{
+
+    text-align:center;
+
+}
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+th,td{
+
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+
+}
+
+
+th{
+
+    background:#2e7d32;
+    color:white;
+
+}
+
+
+button{
+
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+
+}

@@ -1,0 +1,12 @@
+# Backend secrets
+kisan-market-backend/.env
+
+# Backend build files
+kisan-market-backend/target/
+
+# Frontend dependencies/build
+kisan-market-frontend/node_modules/
+kisan-market-frontend/dist/
+
+# Python virtual environment
+kisan-market-frontend/.venv/

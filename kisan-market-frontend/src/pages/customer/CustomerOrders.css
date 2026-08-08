@@ -1,0 +1,64 @@
+.customer-orders-container {
+
+    padding: 30px;
+
+    min-height: 100vh;
+
+}
+
+
+
+.customer-orders-container h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.customer-order-card {
+
+
+    background: white;
+
+    width: 80%;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+.customer-order-card h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.customer-order-card p {
+
+    margin: 8px 0;
+
+    font-size:16px;
+
+}
+
+
+
+.customer-order-card h3 {
+
+    margin-top:15px;
+
+}

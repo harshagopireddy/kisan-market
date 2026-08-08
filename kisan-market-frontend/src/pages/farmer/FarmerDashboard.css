@@ -1,0 +1,62 @@
+.dashboard-container {
+
+    min-height: 100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f2f8f0;
+
+}
+
+
+.dashboard-card {
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    width:400px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+.dashboard-card h1 {
+
+    color:green;
+
+}
+
+
+.dashboard-card button {
+
+    display:block;
+
+    width:100%;
+
+    margin:15px 0;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#4caf50;
+
+    color:white;
+
+    font-size:16px;
+
+}

@@ -1,0 +1,80 @@
+.orders-container {
+
+    padding: 30px;
+    min-height: 100vh;
+
+}
+
+
+.orders-container h1 {
+
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+
+
+.order-card {
+
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+.order-card h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.order-card p {
+
+    font-size: 16px;
+    margin: 8px 0;
+
+}
+
+
+
+.order-card button {
+
+    margin: 10px 8px 0 0;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.order-card button:hover {
+
+    opacity: 0.8;
+
+}
+
+.delivered-note {
+
+    color: #2e7d32;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}

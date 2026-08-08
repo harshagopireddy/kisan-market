@@ -1,0 +1,285 @@
+.cart-container {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-empty {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cart-empty h2 {
+    margin-bottom: 20px;
+}
+
+.cart-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cart-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h2 {
+    margin-bottom: 8px;
+}
+
+.cart-info p {
+    margin: 4px 0;
+    font-size: 15px;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-controls button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    background: #2e7d32;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.qty-controls button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.qty-controls span {
+    min-width: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.remove-btn {
+    background: #d32f2f;
+}
+
+.continue-btn {
+    background: #6d4c41;
+}
+
+.cart-summary {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cart-summary h2 {
+    margin-bottom: 15px;
+}
+
+.delivery-location {
+    margin-bottom: 15px;
+}
+
+.delivery-location label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.delivery-location input {
+    width: 320px;
+    max-width: 90%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-box h2 {
+    color: #1b5e20;
+    margin-bottom: 12px;
+}
+
+.modal-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.pay-option {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pay-option.active {
+    border-color: #2e7d32;
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+.demo-payment {
+    background: #f1f8f1;
+    border: 1px dashed #2e7d32;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.demo-qr {
+    width: 170px;
+    height: 170px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    border: 5px solid #111;
+    border-radius: 6px;
+    padding: 5px;
+    background: white;
+}
+
+.qr-cell {
+    background: white;
+}
+
+.qr-dark {
+    background: #111;
+}
+
+.demo-hint {
+    font-size: 13px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.simulate-btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.paid-note {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.modal-actions button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.cancel-btn {
+    background: #888;
+}
+
+.confirm-btn {
+    background: #2e7d32;
+}
+
+.confirm-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.success-box {
+    background: white;
+    padding: 35px 45px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    max-width: 400px;
+    width: 90%;
+}
+
+.success-box h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.success-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
