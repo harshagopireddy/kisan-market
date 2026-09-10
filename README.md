@@ -155,3 +155,155 @@ The application is built using React.js for the frontend, Spring Boot for the ba
                       │
                       ▼
                 MySQL Database
+```
+## 👥 User Roles
+
+### 👨‍🌾 Farmer
+
+Farmers can:
+
+* Register and login
+* Add agricultural products
+* View their own products
+* Edit product information
+* Delete products
+* View customer orders
+* Manage order status
+
+### 🛒 Customer
+
+Customers can:
+
+* Register and login
+* Browse agricultural products
+* View product details
+* View farmer contact information
+* Place orders
+* View their orders
+* Track order status
+* Provide delivery location
+
+### 👨‍💼 Admin
+
+Admins can:
+
+* Login securely
+* View all users
+* Manage users
+* View and manage products
+* View and manage orders
+* Monitor marketplace activities
+* View platform statistics
+
+---
+
+## 🗄️ Database Entities
+
+### User
+
+* id
+* name
+* email
+* password
+* role
+
+### Product
+
+* id
+* name
+* description
+* price
+* quantity
+* category
+* location
+* farmerId
+
+### Order
+
+* id
+* productId
+* customerId
+* farmerId
+* quantity
+* totalPrice
+* status
+* orderDate
+* deliveryLocation
+
+---
+
+## 🔗 API Modules
+
+### Authentication APIs
+
+* Register User
+* Login User
+
+### Product APIs
+
+* Add Product
+* Get All Products
+* Get Product by ID
+* Get Farmer Products
+* Update Product
+* Delete Product
+
+### Order APIs
+
+* Place Order
+* Get Customer Orders
+* Get Farmer Orders
+* Update Order Status
+* Get Order Details
+
+### Admin APIs
+
+* Get Users
+* Manage Users
+* Get Products
+* Manage Products
+* Get Orders
+* Manage Orders
+* Get Platform Statistics
+
+---
+
+## 🔒 Security Features
+
+* JWT-Based Authentication
+* BCrypt Password Encryption
+* Role-Based Authorization
+* Protected Frontend Routes
+* Protected Backend APIs
+* CORS Configuration
+* Input Validation
+* User Role Verification
+* Secure Authentication Flow
+
+---
+
+## 📱 Frontend Modules
+
+```text
+Authentication
+├── Login
+└── Register
+
+Farmer
+├── Farmer Dashboard
+├── Add Product
+├── My Products
+├── Edit Product
+└── My Orders
+
+Customer
+├── Customer Dashboard
+├── Browse Products
+├── Product Details
+└── My Orders
+
+Admin
+├── Admin Dashboard
+├── Manage Users
+├── Manage Products
+└── Manage Orders
